@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:office_register/in_out.dart';
+import 'package:office_register/camera.dart';
 
 import 'google_map.dart';
 
@@ -35,11 +35,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:google_map(),
+      body: google_map(),
       // body: Column(
       //   children: [
       //     SizedBox(height: 40,),
-      //     in_out(),
+      //     camera(),
+    
       //     SizedBox(height: 20,),
       //     google_map(),
       //   ],
