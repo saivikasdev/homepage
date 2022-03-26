@@ -2,9 +2,12 @@
     package="com.example.office_register">
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
    <application
         android:label="office_register"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"> 
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
