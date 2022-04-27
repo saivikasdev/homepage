@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:office_register/camera.dart';
-import 'google_map.dart';
+import 'package:office_register/enums.dart';
+import 'package:office_register/home.dart';
+
+import 'bottom bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,16 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: google_map(),
-      // body: Column(
-      //   children: [
-      //     SizedBox(height: 40,),
-      //     camera(),
-    
-      //     SizedBox(height: 20,),
-      //     google_map(),
-      //   ],
-      // ),
+      body:home(),
+      bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.home),
     );
   }
 }
